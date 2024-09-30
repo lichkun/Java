@@ -1,0 +1,53 @@
+[
+  {
+    "name": "Kawasaki Ninja",
+    "type": "Sport"
+  },
+  {
+    "name": "Harley-Davidson Sportster",
+    "type": "Road"
+  },
+  {
+    "name": "Renault Master",
+    "seats": 48
+  },
+  {
+    "name": "Mercedes-Benz Sprinter",
+    "seats": 21
+  },
+  {
+    "name": "Renault C-Truck",
+    "cargo": 7.5
+  },
+  {
+    "name": "Bogdan A092",
+    "seats": 24
+  },
+  {
+    "name": "DAF XF 106 2018",
+    "cargo": 3.5
+  },
+  {
+    "name": "Mercedes Actros L",
+    "cargo": 15.0
+  },
+  {
+    "name": "Audi A5",
+    "maxSpeed": "220",
+    "carBody": "Sedan"
+  },
+  {
+    "name": "Toyota Camry",
+    "maxSpeed": 190,
+    "carBody": "Sedan"
+  },
+  {
+    "name": "Audi Q5",
+    "crossoverTypeOfDrive": "4 wheel drive"
+  },
+  {
+    "name": "BMW X5",
+    "crossoverTypeOfDrive": "4 wheel drive"
+  }
+]
+

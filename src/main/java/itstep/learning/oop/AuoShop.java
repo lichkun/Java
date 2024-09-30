@@ -1,22 +1,19 @@
 package itstep.learning.oop;
 
-import java.util.ArrayList;
+import itstep.learning.oop.annotations.Required;
+
+import java.lang.reflect.Field;
 import java.util.List;
 
 public class AuoShop {
     private List<Vehicle> vehicles;
 
     public AuoShop() {
-        vehicles = new ArrayList<>();
-        vehicles.add(new Bike("Kawasaki Ninja", "Sport"));
-        vehicles.add(new Bike("Harley-Davidson Sportster", "Road"));
-        vehicles.add(new Bus("Renault Master", 48));
-        vehicles.add(new Bus("Mercedes-Benz Sprinter", 21));
-        vehicles.add(new Bus("Bogdan A092", 24));
-        vehicles.add(new Bus("Volvo 9700", 54));
-        vehicles.add(new Truck("Renault C-Truck", 7.5));
-        vehicles.add(new Truck("DAF XF 106 2018", 3.5));
-        vehicles.add(new Truck("Mercedes Actros L", 15.0));
+        try {
+            vehicles = new VehicleFactory().loadFromJson("shop.json");
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
     }
 
     public void run() {
@@ -27,6 +24,14 @@ public class AuoShop {
         printNonLargeSized();
         System.out.println("-----------TRAILER-ABLE------------");
         printTrailers();
+        System.out.println("-----------VEHICLE-WITH-TYPE-OF-DRIVE------------");
+        printWithTypeOfDrive();
+//        List<Class<?>> classes = getProductClasses("itstep.learning.oop");
+//        for (Class<?> clazz : classes) {
+//            System.out.println(clazz.getName());
+//            printRequired(clazz);
+//        }
+
     }
 
     public void printAll() {
@@ -52,6 +57,24 @@ public class AuoShop {
             if (v instanceof Trailer) {
                 System.out.print(v.getInfo());
                 System.out.println(" could have a trailer of type " + ((Trailer) v).trailerInfo());
+            }
+        }
+    }
+
+    public void printWithTypeOfDrive() {
+        for (Vehicle v : vehicles) {
+            if (v instanceof TypeOfDrive) System.out.println(v.getInfo());
+        }
+    }
+
+    private void printRequired(Class<?> clazz) {
+        for (Field field : clazz.getDeclaredFields()) {
+            if (field.isAnnotationPresent(Required.class)) {
+                Required annotation = field.getAnnotation(Required.class);
+                boolean isAlter = annotation.isAlternate();
+                String requiredName = field.getAnnotation(Required.class).value();
+                System.out.println(
+                        "".equals(requiredName) ? field.getName() : requiredName + (isAlter ? " or " + field.getName() : ""));
             }
         }
     }

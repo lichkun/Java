@@ -1,7 +1,12 @@
 package itstep.learning.oop;
 
+import itstep.learning.oop.annotations.Product;
+import itstep.learning.oop.annotations.Required;
+import netscape.javascript.JSObject;
+
 import java.util.Locale;
 
+@Product
 public class Bus
         extends Vehicle
         implements LargeSized {
@@ -20,6 +25,10 @@ public class Bus
         );
     }
 
+    public Bus() {
+    }
+
+    @Required("seats")
     private int capacity;
 
     public int getCapacity() {
@@ -29,5 +38,6 @@ public class Bus
     public void setCapacity(int capacity) {
         this.capacity = capacity;
     }
+
 
 }
