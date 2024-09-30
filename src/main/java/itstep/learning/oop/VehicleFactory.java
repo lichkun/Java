@@ -69,30 +69,41 @@ public class VehicleFactory {
             throw new RuntimeException("Error resource traversing");
         }
         List<String> classNames = new ArrayList<>();
-        for (File file : files) {
-            String fileName = file.getName();
-            if (fileName.endsWith(".class") && file.isFile() && file.canRead()) {
-                classNames.add(
-                        packageName + "." +
-                                fileName.substring(0, fileName.length() - 6)
-                );
-            }
-        }
-        // ---------- Знаходимо лише ті класи, які є @Product -----------
+        scanClassesInDirectory(classRoot, packageName, classNames);
+
+        // Знаходимо класи з анотацією @Product
         Map<Class<?>, Map<String, Field>> classes = new HashMap<>();
         for (String className : classNames) {
-            Class<?> cls;
             try {
-                cls = Class.forName(className);
+                Class<?> cls = Class.forName(className);
+                if (cls.isAnnotationPresent(Product.class)) {
+                    classes.put(cls, getRequired(cls));
+                }
             } catch (ClassNotFoundException ignored) {
-                continue;
-            }
-            if (cls.isAnnotationPresent(Product.class)) {
-                classes.put(cls, getRequired(cls));
             }
         }
+
         productClasses = classes;
         return classes;
+    }
+
+    // Рекурсивна функція для сканування всіх класів у поточній директорії та піддиректоріях
+    private void scanClassesInDirectory(File directory, String packageName, List<String> classNames) {
+        File[] files = directory.listFiles();
+        if (files == null) {
+            return;
+        }
+
+        for (File file : files) {
+            if (file.isDirectory()) {
+                // Рекурсивно скануємо підпакети
+                scanClassesInDirectory(file, packageName + "." + file.getName(), classNames);
+            } else if (file.getName().endsWith(".class")) {
+                // Додаємо файл класу до списку
+                String className = packageName + "." + file.getName().substring(0, file.getName().length() - 6);
+                classNames.add(className);
+            }
+        }
     }
 
     private Vehicle fromJsonObject(JsonObject obj) {

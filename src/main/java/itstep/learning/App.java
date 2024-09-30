@@ -13,7 +13,7 @@ import itstep.learning.oop.OopDemo;
 public class App {
     public static void main(String[] args) {
         // new Basics().run();
-        // new OopDemo().run();
+        new OopDemo().run();
         // int[][] A = {
         //         {1, 2, 3},
         //         {4, 5, 6}
@@ -25,10 +25,10 @@ public class App {
         // };
         // Matrix.Multiple(A, B);
         //new AsyncDemo().run();
-        Resolver resolver = new Resolver();
-        Injector injector = resolver.getInjector();
-        IocDemo iocDemo = injector.getInstance(IocDemo.class); // ~ new IocDemo()
-        iocDemo.run();
+//        Resolver resolver = new Resolver();
+//        Injector injector = resolver.getInjector();
+//        IocDemo iocDemo = injector.getInstance(IocDemo.class); // ~ new IocDemo()
+//        iocDemo.run();
     }
 }
 /*
