@@ -11,3 +11,4 @@ Servlet
 IoC
 
 ![изображение](https://github.com/user-attachments/assets/1cd469c6-7fa6-4acf-8222-15d30a694424)
+![изображение](https://github.com/user-attachments/assets/3d48a922-2de6-44f2-a204-10a0f4e8512c)
