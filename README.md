@@ -12,3 +12,9 @@ IoC
 
 ![изображение](https://github.com/user-attachments/assets/1cd469c6-7fa6-4acf-8222-15d30a694424)
 ![изображение](https://github.com/user-attachments/assets/3d48a922-2de6-44f2-a204-10a0f4e8512c)
+
+Work with DB
+
+
+![изображение](https://github.com/user-attachments/assets/f205ad1e-83a3-4952-9c70-a28f8e66e75e)
+![изображение](https://github.com/user-attachments/assets/fef0b7d0-437e-44e2-8c8f-9331f4b42eae)
