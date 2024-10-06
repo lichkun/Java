@@ -7,3 +7,7 @@ jsp
 Servlet
 
 ![изображение](https://github.com/user-attachments/assets/896f5364-4a49-45ce-9245-c824b39fd3f6)
+
+IoC
+
+![изображение](https://github.com/user-attachments/assets/1cd469c6-7fa6-4acf-8222-15d30a694424)
