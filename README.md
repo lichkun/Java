@@ -3,3 +3,5 @@ jsp
 
 ![изображение](https://github.com/user-attachments/assets/d108bcc9-33c8-40bf-baf1-155e8e512cef)
 
+Servlet
+![изображение](https://github.com/user-attachments/assets/896f5364-4a49-45ce-9245-c824b39fd3f6)
