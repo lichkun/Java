@@ -1,11 +1,5 @@
-Annotations_dz
-![изображение](https://github.com/user-attachments/assets/378fc61a-4127-4c5d-aec1-15231ba493a5)
-Json
-**![изображение](https://github.com/user-attachments/assets/beb9df3d-e4b0-4734-85a1-e4de8a3f045e)
-Json рефлексия
-![изображение](https://github.com/user-attachments/assets/0a0955e1-aa1d-46b4-b6fe-3a084fb65ef4)
+jsp
+![изображение](https://github.com/user-attachments/assets/82bb7574-1c7f-4d83-bcd3-caf35e75ebc7)
 
-Acинхронне программування
-![изображение](https://github.com/user-attachments/assets/9d1ec4db-7081-4b1f-9521-6af935f57fb4)
-
+![изображение](https://github.com/user-attachments/assets/d108bcc9-33c8-40bf-baf1-155e8e512cef)
 
