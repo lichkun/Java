@@ -2,6 +2,7 @@ package itstep.learning.ioc;
 
 import com.google.inject.servlet.ServletModule;
 import itstep.learning.filters.*;
+import itstep.learning.servlets.AuthServlet;
 import itstep.learning.servlets.HomeServlet;
 import itstep.learning.servlets.WebXmlServlet;
 
@@ -16,5 +17,6 @@ public class WebModule extends ServletModule {
         //также само с сервлетами
         serve("/").with(HomeServlet.class);
         serve("/web-xml").with(WebXmlServlet.class);
+        serve("/auth").with(AuthServlet.class);
     }
 }
