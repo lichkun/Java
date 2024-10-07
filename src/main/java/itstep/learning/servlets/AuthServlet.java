@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.text.ParseException;
 
 @Singleton
 public class AuthServlet extends HttpServlet {
@@ -28,11 +29,18 @@ public class AuthServlet extends HttpServlet {
         try {
             String authHeader = req.getHeader("Authorization");
             if(authHeader ==null) {
-                throw new Exception("Authorization header not found");
+                throw new ParseException("Authorization header not found",401);
             }
+            String authScheme = "Basic ";
+            if(! authHeader.startsWith(authScheme)) {
+                throw new ParseException("Invalid authorization scheme. Required",401);
+            }
+
+            String credentials = authHeader.substring(authScheme.length());
         }
-        catch (Exception ex) {
+        catch (ParseException ex) {
             restResponse.setStatus("error");
+            restResponse.setCode(ex.getErrorOffset());
             restResponse.setData(ex.getMessage());
         }
 
