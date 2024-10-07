@@ -9,48 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8b7f762-6b44-4962-ab0d-de178acdd3ac" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/dal/dao/AuthDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/filters/CharsetFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/filters/SecurityFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/ioc/ConfigContextListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/ioc/ServiceModule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/ioc/WebModule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/services/db/DbService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/services/db/MySqlDbService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/services/file/FileService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/services/file/RandomFileNameService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/services/hash/HashService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/services/hash/Md5HashService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/services/kdf/KdfService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/services/kdf/PbKdf1Service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/servlets/HomeServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/servlets/WebXmlServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/_layout.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/fregment.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/insecure.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/not_found.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web_xml.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/shop.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/site.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/Java_Logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/shop.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/site.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shop.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="b8b7f762-6b44-4962-ab0d-de178acdd3ac" name="Changes" comment="Auth-db" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -239,11 +198,24 @@
       <workItem from="1727850077478" duration="14198000" />
       <workItem from="1727934782262" duration="12784000" />
       <workItem from="1728246402657" duration="5294000" />
-      <workItem from="1728280614888" duration="4122000" />
+      <workItem from="1728280614888" duration="4437000" />
     </task>
+    <task id="LOCAL-00001" summary="Auth-db">
+      <option name="closed" value="true" />
+      <created>1728285059311</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1728285059311</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Auth-db" />
+    <option name="LAST_COMMIT_MESSAGE" value="Auth-db" />
   </component>
 </project>
