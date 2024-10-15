@@ -6,3 +6,12 @@
 .spacer{
     flex: 1;
 }
+.nav-search {
+    margin-bottom: 0;
+    margin-right: 30px;
+}
+.avatar{
+    border-radius: 50% !important;
+    max-height: 48px !important;
+    max-width: 48px !important;
+}

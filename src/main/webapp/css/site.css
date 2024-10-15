@@ -22,3 +22,8 @@ a {
 a:hover {
     text-decoration: underline;
 }
+.nav-avatar{
+    border-radius: 50%;
+    max-height: 48px;
+    max-width: 48px;
+}

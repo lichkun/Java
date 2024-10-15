@@ -9,11 +9,43 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8b7f762-6b44-4962-ab0d-de178acdd3ac" name="Changes" comment="Auth-db">
-      <change afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/servlets/AuthServlet.java" afterDir="false" />
+    <list default="true" id="b8b7f762-6b44-4962-ab0d-de178acdd3ac" name="Changes" comment="AuthServlet">
+      <change afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/dal/dto/Token.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/dal/dto/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/dal/dto/UserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/models/SignupFormModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/rest/RestMetaData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/rest/RestResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/rest/RestServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/rest/RestStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/services/form/FormParseResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/services/form/FormParseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/services/form/MixedFormParseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/services/storage/LocalStorageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/services/storage/StorageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/services/stream/StreamService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/servlets/StorageServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/testAPI.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/test_api.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/97de34c0-c0cc-44d0-8ecc-a2f2e21640a1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/97de34c0-c0cc-44d0-8ecc-a2f2e21640a1/storage_v2/_src_/schema/java_kn_p_213.JqGxsQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/97de34c0-c0cc-44d0-8ecc-a2f2e21640a1/storage_v2/_src_/schema/java_nk_p_213.AHaiSg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c7389663-c4fb-4ac0-b9d9-2b62228f1a15.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c7389663-c4fb-4ac0-b9d9-2b62228f1a15/storage_v2/_src_/schema/java_kn_p_213.JqGxsQ.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/itstep/learning/dal/dao/AuthDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/dal/dao/AuthDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/itstep/learning/ioc/ServiceModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/ioc/ServiceModule.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/itstep/learning/ioc/WebModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/ioc/WebModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/itstep/learning/services/db/MySqlDbService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/services/db/MySqlDbService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/itstep/learning/servlets/AuthServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/servlets/AuthServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/_layout.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/_layout.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/shop.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/shop.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/site.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/shop.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,29 +55,34 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="JavaScript File" />
         <option value="Jsp File" />
         <option value="Interface" />
-        <option value="CSS File" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "lichkun"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;lichkun&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/lichkun/Java",
-    "accountId": "aa2796d5-7894-4d90-bfe9-a871a4c452d9"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/lichkun/Java&quot;,
+    &quot;accountId&quot;: &quot;aa2796d5-7894-4d90-bfe9-a871a4c452d9&quot;
   }
-}]]></component>
+}</component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -73,7 +110,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;Tomcat Server.Tomcat 9.0.95.executor&quot;: &quot;Run&quot;,
     &quot;Tomcat Server.Unnamed.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;java-web&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
@@ -96,8 +133,8 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Проекты\Java\Java-Web-KNP-213\src\main\webapp" />
-      <recent name="D:\Проекты\Java\Java-Web-KNP-213\src\main\webapp\WEB-INF" />
       <recent name="D:\Проекты\Java\Java-Web-KNP-213\src\main\webapp\WEB-INF\views" />
+      <recent name="D:\Проекты\Java\Java-Web-KNP-213\src\main\webapp\WEB-INF" />
       <recent name="D:\Проекты\Java\Java-Web-KNP-213\src\main\java\itstep\learning" />
       <recent name="D:\Проекты\Java\Java-Web-KNP-213\src\main\webapp\img" />
     </key>
@@ -215,7 +252,11 @@
       <workItem from="1727850077478" duration="14198000" />
       <workItem from="1727934782262" duration="12784000" />
       <workItem from="1728246402657" duration="5294000" />
-      <workItem from="1728280614888" duration="6902000" />
+      <workItem from="1728280614888" duration="9379000" />
+      <workItem from="1728366787786" duration="10501000" />
+      <workItem from="1728414331025" duration="5280000" />
+      <workItem from="1728540115773" duration="13683000" />
+      <workItem from="1728885608522" duration="9363000" />
     </task>
     <task id="LOCAL-00001" summary="Auth-db">
       <option name="closed" value="true" />
@@ -241,14 +282,42 @@
       <option name="project" value="LOCAL" />
       <updated>1728285143821</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="AuthServlet">
+      <option name="closed" value="true" />
+      <created>1728287853798</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1728287853798</updated>
+    </task>
+    <task id="LOCAL-00005" summary="AuthServlet">
+      <option name="closed" value="true" />
+      <created>1728288245150</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1728288245150</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Auth-db" />
-    <option name="LAST_COMMIT_MESSAGE" value="Auth-db" />
+    <MESSAGE value="AuthServlet" />
+    <option name="LAST_COMMIT_MESSAGE" value="AuthServlet" />
   </component>
 </project>

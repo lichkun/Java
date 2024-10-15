@@ -4,6 +4,7 @@ import com.google.inject.servlet.ServletModule;
 import itstep.learning.filters.*;
 import itstep.learning.servlets.AuthServlet;
 import itstep.learning.servlets.HomeServlet;
+import itstep.learning.servlets.StorageServlet;
 import itstep.learning.servlets.WebXmlServlet;
 
 public class WebModule extends ServletModule {
@@ -18,5 +19,6 @@ public class WebModule extends ServletModule {
         serve("/").with(HomeServlet.class);
         serve("/web-xml").with(WebXmlServlet.class);
         serve("/auth").with(AuthServlet.class);
+        serve("/storage/*").with(StorageServlet.class);
     }
 }

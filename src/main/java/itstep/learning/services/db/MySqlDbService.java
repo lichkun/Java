@@ -14,8 +14,8 @@ public class MySqlDbService implements DbService {
             //формируем строку
             String connectionUrl = "jdbc:mysql://localhost:3308/java_kn_p_213"+
                     "?useUnicode=true&characterEncoding=utf8";
-            String username = "user213";
-            String password = "pass123";
+            String username = "root";
+            String password = "root";
             //получаем подключение
             connection = DriverManager.getConnection(connectionUrl, username, password);
         }
