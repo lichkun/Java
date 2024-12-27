@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="Java-Web-KNP-213:war exploded" />
+      <artifact name="JavaWeb-KN-P-213:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -10,42 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8b7f762-6b44-4962-ab0d-de178acdd3ac" name="Changes" comment="AuthServlet">
-      <change afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/dal/dto/Token.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/dal/dto/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/dal/dto/UserRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/models/SignupFormModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/rest/RestMetaData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/rest/RestResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/rest/RestServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/rest/RestStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/services/form/FormParseResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/services/form/FormParseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/services/form/MixedFormParseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/services/storage/LocalStorageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/services/storage/StorageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/services/stream/StreamService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/servlets/StorageServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/testAPI.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/test_api.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/97de34c0-c0cc-44d0-8ecc-a2f2e21640a1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/97de34c0-c0cc-44d0-8ecc-a2f2e21640a1/storage_v2/_src_/schema/java_kn_p_213.JqGxsQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/97de34c0-c0cc-44d0-8ecc-a2f2e21640a1/storage_v2/_src_/schema/java_nk_p_213.AHaiSg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c7389663-c4fb-4ac0-b9d9-2b62228f1a15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c7389663-c4fb-4ac0-b9d9-2b62228f1a15/storage_v2/_src_/schema/java_kn_p_213.JqGxsQ.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/itstep/learning/dal/dao/AuthDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/dal/dao/AuthDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/itstep/learning/ioc/ServiceModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/ioc/ServiceModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/itstep/learning/ioc/WebModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/ioc/WebModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/itstep/learning/services/db/MySqlDbService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/services/db/MySqlDbService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/itstep/learning/servlets/AuthServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/servlets/AuthServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/_layout.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/_layout.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/shop.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/shop.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/site.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/shop.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,12 +44,12 @@
     &quot;assignee&quot;: &quot;lichkun&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/lichkun/Java&quot;,
-    &quot;accountId&quot;: &quot;aa2796d5-7894-4d90-bfe9-a871a4c452d9&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/lichkun/Java.git",
+    "accountId": "aa2796d5-7894-4d90-bfe9-a871a4c452d9"
   }
-}</component>
+}]]></component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -103,33 +70,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Tomcat Server.Tomcat 9.0.95.executor&quot;: &quot;Run&quot;,
-    &quot;Tomcat Server.Unnamed.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;java-web&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Tomcat Server.Tomcat 9.0.95.executor": "Run",
+    "Tomcat Server.Unnamed.executor": "Run",
+    "git-widget-placeholder": "java-web",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Проекты\Java\Java-Web-KNP-213\src\main\webapp" />
@@ -140,13 +107,13 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="Tomcat 9.0.95" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.95" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration name="Tomcat 9.0.95" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.95" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.8">
       <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
       <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
-        <artifact name="Java-Web-KNP-213:war exploded">
+        <artifact name="JavaWeb-KN-P-213:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/KNP_213" />
+            <option name="CONTEXT_PATH" value="/JavaWeb_KN_P_213_war_exploded" />
           </settings>
         </artifact>
       </deployment>
@@ -225,6 +192,7 @@
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
           <artifact name="Java-Web-KNP-213:war exploded" />
+          <artifact name="JavaWeb-KN-P-213:war exploded" />
         </option>
       </method>
     </configuration>
@@ -257,6 +225,7 @@
       <workItem from="1728414331025" duration="5280000" />
       <workItem from="1728540115773" duration="13683000" />
       <workItem from="1728885608522" duration="9363000" />
+      <workItem from="1735322539688" duration="288000" />
     </task>
     <task id="LOCAL-00001" summary="Auth-db">
       <option name="closed" value="true" />
