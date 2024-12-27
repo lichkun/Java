@@ -1,54 +1,46 @@
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<h1>Файл конфигураций <code>web.xml</code></h1>
+<h1>Файл налаштувань <code>web.xml</code></h1>
 <p>
-    Файл <code>web.xml</code> позволяет настроить веб-сервер (Tomcat или другие)
-    под данный проект.
-    <%=request.getAttribute("hash")%>
+  Файл <code>web.xml</code> дозволяє доналаштувати веб-сервер (Tomcat або інші)
+  під даний проєкт.
+  <%=request.getAttribute("hash")%>
 </p>
-<h2>Сервлеты и маршрутизация</h2>
+<h2>Фільтри та їх область дії</h2>
 <p>
-    До появления аннотаций и кшталт <code>@WebServlet</code> сервлеты регистрировались
-    в файле <code>web.xml</code> с обозначением их маршрутов (роутинг).
+
+  Для фільтрів <code>web.xml</code> особливо важливий, оскільки гарантує порядок
+  виконання фільтрів (якщо їх декілька). В області дії фільтрів поширеною є практика
+  шаблонних адрес на кшталт <code>/*</code> або <code>/api/*</code>
 </p>
+
 <pre>
-&lt;!--Регистрация сервлетов--&gt;
-  &lt;servlet&gt;
-    &lt;servlet-name&gt;webXmlServlet&lt;/servlet-name&gt;
-    &lt;servlet-class&gt;itstep.learning.servlets.WebXmlServlet&lt;/servlet-class&gt;
-      &lt;!--webXmlServlet = new itstep.learning.servlets.WebXmlServlet()--&gt;
-  &lt;/servlet&gt;
-    &lt;!--И Их маршрутизация(mapping)--&gt;
-  &lt;servlet-mapping&gt;
-    &lt;servlet-name&gt;webXmlServlet&lt;/servlet-name&gt;
-    &lt;url-pattern&gt;/web-xml&lt;/url-pattern&gt;
-  &lt;/servlet-mapping&gt;
+&lt ;! -- Реєстрація фільтрів -- &gt;
+&lt; filter&gt;
+&lt; filter-name&gt; charsetFilter&lt;/filter-name&gt;
+&lt; filter-class&gt; itstep. learning. filters. CharsetFilter&lt;/filter-class&gt;
+&lt;/filter&gt;
+&lt; filter-mapping&gt;
+&lt; filter-name&gt; charsetFilter&lt;/filter-name&gt;
+&lt; url-pattern&gt; /*&lt; /url-pattern&gt;
+&lt;/filter-mapping&gt;
 </pre>
-<h2>Страница ошибок</h2>
+
+<h2>Сервлети та маршрутизація</h2>
 <p>
-    в <code>web.xml</code> можно проложить адреса для всех типов ошибок
-    также как с кодом ошибок, так и по исключению, которое случается при обработке
+
+  До появи анотацій на кшталт <code>@WebServlet</code> сервлети реєструвались
+  у файлі <code>web.xml</code> із зазначенням їх маршрутів (роутингу).
 </p>
+
 <pre>
-  &lt;error-page&gt;
-    &lt;error-code&gt;404&lt;/error-code&gt;
-    &lt;location&gt;/WEB-INF/views/_layout.jsp&lt;/location&gt;
-  &lt;/error-page&gt;
-</pre>
-<h2>Фильтры и область их действия</h2>
-<p>
-    Для фильтров <code>web.xml</code> особенно важный, поскольку гарантирует порядок
-    выполнения фильтров(если их несколько). В области действия фильтров распространёной практирой являтся 
-    шаблонных адресов на кшталт <code>/*</code> или <code>/api/*</code>
-</p>
-<pre>
-    &lt;!--Регистрация фильтров--&gt;
-  &lt;filter&gt;
-    &lt;filter-name&gt;charsetFilter&lt;/filter-name&gt;
-    &lt;filter-class&gt;itstep.learning.filters.CharsetFilter&lt;/filter-class&gt;
-  &lt;/filter&gt;
-  &lt;filter-mapping&gt;
-    &lt;filter-name&gt;charsetFilter&lt;/filter-name&gt;
-    &lt;url-pattern&gt;/*&lt;/url-pattern&gt;
-      &lt;!--/* для всех запросов--&gt;
-  &lt;/filter-mapping&gt;
+  &lt;p&gt;
+  Файл &lt;code&gt;web.xml&lt;/code&gt; дозволяє доналаштувати веб-сервер (Tomcat або інші)
+  під даний проєкт.
+  &lt;/p&gt;
+  &lt;h2&gt;Сервлети та маршрутизація&lt;/h2&gt;
+  &lt;p&gt;
+  До появи анотацій на кшталт &lt;code&gt;@WebServlet&lt;/code&gt; сервлети реєструвались
+  у файлі &lt;code&gt;web.xml&lt;/code&gt; із зазначенням їх маршрутів (роутингу).
+  &lt;/p&gt;
 </pre>

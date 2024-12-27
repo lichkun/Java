@@ -12,23 +12,17 @@ public class UserRole {
     private boolean canUpdate;
     private boolean canDelete;
 
-    public UserRole() {
-    }
-    public UserRole(ResultSet rs) throws SQLException {
-        this.setRoleId(UUID.fromString(rs.getString("role_id")));
-        this.setRoleName(rs.getString("role_name"));
-        this.setCanCreate(rs.getBoolean("can_create"));
-        this.setCanRead(rs.getBoolean("can_read"));
-        this.setCanUpdate(rs.getBoolean("cac_update"));
-        this.setCanDelete(rs.getBoolean("can_delete"));
+    public UserRole(){
+
     }
 
-    public UUID getRoleId() {
-        return roleId;
-    }
-
-    public void setRoleId(UUID roleId) {
-        this.roleId = roleId;
+    public UserRole(ResultSet resultSet) throws SQLException {
+        this.setRoleId(UUID.fromString(resultSet.getString("role_id")));
+        this.setRoleName(resultSet.getString("role_name"));
+        this.setCanCreate(resultSet.getBoolean("can_create"));
+        this.setCanRead(resultSet.getBoolean("can_read"));
+        this.setCanUpdate(resultSet.getBoolean("can_update"));
+        this.setCanDelete(resultSet.getBoolean("can_delete"));
     }
 
     public String getRoleName() {
@@ -39,12 +33,20 @@ public class UserRole {
         this.roleName = roleName;
     }
 
-    public boolean isCnCreate() {
+    public UUID getRoleId() {
+        return roleId;
+    }
+
+    public void setRoleId(UUID roleId) {
+        this.roleId = roleId;
+    }
+
+    public boolean isCanCreate() {
         return canCreate;
     }
 
-    public void setCanCreate(boolean cnCreate) {
-        this.canCreate = cnCreate;
+    public void setCanCreate(boolean canCreate) {
+        this.canCreate = canCreate;
     }
 
     public boolean isCanRead() {
@@ -67,7 +69,7 @@ public class UserRole {
         return canDelete;
     }
 
-    public void setCanDelete(boolean cnDelete) {
-        this.canDelete = cnDelete;
+    public void setCanDelete(boolean canDelete) {
+        this.canDelete = canDelete;
     }
 }

@@ -1,83 +1,100 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ page import="itstep.learning.services.file.RandomFileNameService" %>
-<%
-    RandomFileNameService randomFileNameService = new RandomFileNameService();
-%>
-<i>Home JSP</i>
-<h1>Java wep. JSP</h1>
-<img src="img/Java_Logo.png" alt="logo" width="100"/>
-<i>Контроль инжекции хешу: <%=request.getAttribute("hash") %></i>
+<%@ page contentType="text/html;charset=UTF-8"  %>
+
+<h2>Випадкові імена файлів</h2>
+<p>Ім'я файлу за замовчанням: <%= request.getAttribute("randomFileNameDefault") %></p>
+<p>Ім'я файлу довжиною 12 символів: <%= request.getAttribute("randomFileNameWithLength") %></p>
+
+
+<h1>Java web. JSP</h1>
+<img src="img/Java_Logo.svg" alt="logo" style="height: 200px">
+<i>Контроль інжекції хешу: <%= request.getAttribute("hash") %></i>
 <p>
-    JSP - Java Server Page - технология веб разработки с динамическим
-    формированием HTML страниц. Аналогично к PHP, ранее ASP то
-    надстройка над HTML, которое разширяет его добавляя
+    JSP - Java Server Pages - технологія веб-розробки з динамічним
+    формуванням HTML сторінок. Аналогічно до PHP, ранніх ASP є
+    надбудовою над HTML, що розширює його додаючи
 </p>
 <ul>
-    <li>Выражения</li>
-    <li>Переменные</li>
-    <li>Алгоритмические конструкции(условия, циклы)</li>
-    <li>Взаимодействия с другими файлами-страницами</li>
+    <li>Вирази</li>
+    <li>Змінні</Li>
+    <li>Алгоритмічні конструкції (умови, цикли)</li>
+    <li>Взаємодію з іншими файлами-сторінками</li>
 </ul>
 <p>
-    Основу JSP составляет специализированные теги &lt;% %&gt; и &lt;% = %&gt;<br/>
-    Тег &lt;% %&gt; включает в себя Java-код тег &lt;% = %&gt; выводит результат(короткая форма оператора print())
+    Основу JSP складають спеціалізовані теги &lt;% %&gt; та &lt;%= %&gt; <br/>
+    Тег &lt;% %&gt; включає в себе Java-код, тег &lt;%= %&gt; виводить
+    результат (є скороченою формою оператора <code>print()</code>).
 </p>
-<h2>Выражения</h2>
 <p>
-    Выражение чаще всего задаются тегом, который выводит, в котором будет
-    произвольное выражение (корректное для Java). Вывод результата происходит в месте,
-    где находиться тег <br/>
-    &lt;%=2+3%&gt; = <%=2 + 3%>
+
+    Вирази частіше все задаються тегом, що виводить, у якому може бути
+    довільний вираз (коректний для Java). Виведення результату здійснюється
+    у тому місці, де знаходиться тег: <br/>
+    &lt; %= 2 + 3 %&gt; =< %= 2+3%>
 </p>
-<h2>Переменные</h2>
+<h2>3мiнні</h2>
+
 <p>
-    Переменные, их объявление и назначение (без вывода)
-    оформляется в блоке &lt;% %&gt;
+
+    Змінні, їх оголошення та призначення (без виведення результату)
+    оформлюється у блоці &lt;% %&gt;
         <%
-      String str= "Hello, World!";
-      double[] prices = {10.0,20.0,30.0,40.0};
-    %>
+
+String str = "Hello, World!";
+double[] prices = { 10.0, 20.0, 30.0, 40.0 };
+
+%>
 <pre>
-      &lt;
-        String str= "Hello, World!";
-        double[] prices = {10.0,20.0,30.0,40.0};
-      &gt;
-    </pre>
-</p>
+
+    &lt;%
+    String str = "Hello, World!";
+    double[] prices = { 10.0, 20.0, 30.0, 40.0 };
+    %&gt;
+</pre>
 <p>
-    Вывод значения переменных - тег <br/>
-    &lt;%= str % &gt; &rarr; <%= str %>
+
+    Виведення значень змінних - знов тег <br/>
+    &lt;%= str %&gt; &rarr; <%= str %>
 </p>
-<h2>Алгоритмические конструкции</h2>
+
+<h2>Алгоритмічні конструкції</h2>
 <pre>
-    &lt; for (int i = 0; i < prices.length; i++) { %&gt;
-      &lt;i&gt;&lt;%= prices[i] %&gt;&lt;/i&gt;&amp;emsp;
-  &lt;% } &gt;
-  </pre>
+    &lt;% for (int i = 0; i < prices.length; i++) { %&gt;
+        &lt;i&gt; &lt;%= prices[i] %&gt;&lt;/i&gt;&amp; emsp;
+    &lt;% } %&gt;
+</pre>
 &rarr;
+<% for (int i = 0; i < prices.length; i++) { %>
+<i><%= prices[i] %></i>&emsp;
+<% } %>
+
+<h2>Взаємодія з файлами</h2>
+&lt;jsp:include page="WEB-INF/fragment.jsp" /&gt; &rarr;
+<jsp:include page="../fragment.jsp" />
+
+<p>
+    Д.3. Реалізувати виведення масиву double[] prices у вигляді HTML-таблиці
+    1 10,0
+    2 20,0
+    ...
+    Створити файл "not_found.jsp", реалізувати у ньому сторінку 404
+</p>
+
+
+<h1>Prices</h1>
 <table border="1">
     <tr>
         <th>#</th>
         <th>Price</th>
     </tr>
-    <% for (int i = 0; i < prices.length; i++) { %>
+    <%
+        for (int i = 0; i < prices.length; i++) {
+    %>
     <tr>
-        <td><%= (i + 1) %></td>
+        <td><%= i + 1 %></td>
         <td><%= prices[i] %></td>
     </tr>
-    <% } %>
+    <%
+        }
+    %>
 </table>
 
-<h2>Случайные имена файлов</h2>
-<p>Сгенерированные случайные имена файлов:</p>
-<ul>
-    <li>Длина 5: <%= randomFileNameService.generate(5) %></li>
-    <li>Длина 10: <%= randomFileNameService.generate(10) %></li>
-    <li>Длина 12: <%= randomFileNameService.generate(12) %></li>
-    <li>Длина по умолчанию: <%= randomFileNameService.generateDefault() %></li>
-</ul>
-
-<h2>Взаимодействие с файлами</h2>
-&lt;jsp:include page="WEB-INF/fregment.jsp"/&gt;
-<br/>&rarr;<br/>
-<jsp:include page="fregment.jsp"/>

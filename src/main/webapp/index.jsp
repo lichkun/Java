@@ -1,12 +1,15 @@
-<%@ page contentType="text/html;charset=UTF-8" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
-  String pageBody = (String) request.getAttribute("body");
+    String pageBody = (String) request. getAttribute( "body" );
 %>
+
 <html>
-  <head>
-    <title>KNP-213</title>
-  </head>
-  <body>
+<head>
+    <title>KN-P-213</title>
+
+</head>
+<body>
     <h1>Servlet API error</h1>
-  </body>
+
+</body>
 </html>
